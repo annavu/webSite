@@ -1,0 +1,241 @@
+
+
+.header {
+  height: 100vh;
+
+
+  .nav {
+    height: 90px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width:100%;
+    position: fixed;
+    background: $white;
+    transition: all 0.4s ease-out;
+
+
+
+    .logo {
+      height: 70px;
+      margin-left: 20px;
+      cursor: pointer;
+
+      .logo__img {
+        height: 100%;
+      }
+    }
+
+
+
+    .menu {
+      margin-right: 50px;
+      padding-top:13px;
+      
+
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10px;
+        @media(max-width:930px) {
+          display:none;
+        }
+      
+        .contact__text {
+          color: $red;
+          font-size: 13px;
+          font-weight: 400;
+
+            .contact__text--number {
+              font-size: 13px;
+              font-weight: 700;
+            }
+        }
+
+        .contact__icon {
+          margin-right:13px;
+          height: 25px;
+          width: 25px
+        }
+      }
+
+
+
+
+      .list {
+        display: flex;
+        padding-top:10px;
+
+        .list__item {
+          list-style: none;
+          color: $black;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 7px 10px 18px 10px;
+          margin-left:25px;
+          cursor: pointer;
+          @media(max-width:930px) {
+            display:none;
+          }
+
+          &:hover {
+            color: $red;
+            transition: 0.5s;
+          }
+        }
+
+        .list__item--active {
+          background: $red;
+          color: $white;
+          border-top-left-radius: 12px;;
+          border-top-right-radius: 12px;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 7px 10px 18px 10px;
+          cursor: pointer;
+          @media(max-width:930px) {
+            display:none;
+          }
+        }
+      }
+
+
+      .list--overlay {
+        text-align: center;
+        display: block;
+        padding-bottom:10px;
+      }
+
+      .list--overlay .list__item {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        color: $white;
+        &:hover {
+          color: #555;
+        }
+      }
+
+
+      .list--overlay .list__item--active {
+        background: none;
+        color: $white;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        margin-left: 25px;
+        &:hover {
+          color: #555;
+        }
+      }
+    }
+
+
+    .hamburger {
+      position: absolute;
+      top: 32px;
+      right: 30px;
+      cursor: pointer;
+      font-size: 30px;
+      height: 30px;
+      width: 43px;
+      display: none;
+      width: 38px;
+      height: 38px;
+      &:hover {
+        opacity: 0.7; 
+      }
+      @media(max-width: 930px) {
+        display: block;
+      }
+
+      .hamburger__item {
+        display: block;
+        width: 43px;
+        height: 5px;
+        background:#777;
+        margin: 6px 0;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+
+
+    .hamburger--clicked .hamburger__item:nth-child(2) {
+      opacity: 0;
+    }
+      
+    .hamburger--clicked .hamburger__item:nth-child(1) {
+      transform-origin: left;
+      transform: rotate(42deg) translateX(5px);
+    }
+      
+    .hamburger--clicked .hamburger__item:nth-child(3) {
+      transform-origin: left;
+      transform: rotate(-42deg) translateY(5px); 
+    }
+  
+  }
+
+  .nav--overlay {
+    width: 100%;
+    height: 320px;
+    background: $red;
+    position: relative;
+    z-index: 2;
+    transition: all 0.7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+
+  .nav--overlay .logo {
+    display: none;
+    transition: all 0.4s ease-out;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .showcase__title {
+      color: $white;
+      font-size: 72px;
+      font-weight: 700;
+      text-transform: uppercase;
+      @media(max-width: 930px) {
+        font-size: 35px;
+      }
+      @media(max-width: 320px) {
+        font-size: 30px;
+      }
+    }
+
+    .showcase__text {
+      color: $white;
+      font-size: 55px;
+      font-weight: 300;
+      text-transform: uppercase;
+      @media(max-width: 930px) {
+        font-size: 24px;
+      }
+      @media(max-width: 320px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
