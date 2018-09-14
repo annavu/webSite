@@ -2,6 +2,8 @@
 
 .header {
   height: 100vh;
+  position: relative;
+  transition: all 0.4s ease-out;
 
 
   .nav {
@@ -14,6 +16,7 @@
     position: fixed;
     background: $white;
     transition: all 0.4s ease-out;
+    z-index: 2;
 
 
 
@@ -189,6 +192,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
   }
 
 
@@ -208,6 +212,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
 
 
     .showcase__title {
@@ -238,4 +243,9 @@
   }
 }
 
+
+.header--height {
+  height: auto;
+  transition: all 0.4s ease-out;
+}
 
