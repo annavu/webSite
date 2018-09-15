@@ -18,18 +18,18 @@ function open() {
 window.sr = ScrollReveal();
     sr.reveal('.card__img', {
         reset: true,
-        delay: 1000,
+        delay: 400,
         origin: 'bottom',
         distance: 0,
-        duration: 600,
+        duration: 500,
         scale: 0.5,
         easing: 'linear',
     });
     sr.reveal('.card__title, .card__text', {
         reset: true,
-        delay: 1000,
+        delay: 400,
         origin: 'bottom',
-        duration: 600,
+        duration: 500,
         scale: 0.5,
         easing: 'linear',
     });
