@@ -14,3 +14,22 @@ function open() {
   hamburger.classList.toggle("hamburger--clicked");
   header.classList.toggle("header--height");
 }
+
+window.sr = ScrollReveal();
+    sr.reveal('.card__img', {
+        reset: true,
+        delay: 1000,
+        origin: 'bottom',
+        distance: 0,
+        duration: 600,
+        scale: 0.5,
+        easing: 'linear',
+    });
+    sr.reveal('.card__title, .card__text', {
+        reset: true,
+        delay: 1000,
+        origin: 'bottom',
+        duration: 600,
+        scale: 0.5,
+        easing: 'linear',
+    });
