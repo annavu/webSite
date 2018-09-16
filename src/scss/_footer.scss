@@ -6,7 +6,7 @@
   flex-wrap: wrap;
   font-size: 12px;
   position: relative;
-  padding: 20px 0 20px 0;
+  padding: 35px 0;
 
   .footer__img {
     height: 90px;
@@ -65,11 +65,15 @@
     top: 50%;
     right: 0.5%;
     transform: translateY(-50%);
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s ease-in-out;
+    }
     @media(max-width:1250px) {
-      top:83%;
+      top:82%;
     }
     @media(max-width:530px) {
-      top: 88%;
+      top: 85%;
     }
     @media(max-width:375px) {
       display: none;

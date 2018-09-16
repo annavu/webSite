@@ -5,6 +5,7 @@ const showcase = document.querySelector('.showcase');
 const header = document.querySelector('.header');
 
 
+
 hamburger.addEventListener('click', open);
 
 function open() {
