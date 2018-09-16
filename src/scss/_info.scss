@@ -1,0 +1,50 @@
+.info-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  width: 97%;
+  margin: 0 auto;
+  @media(max-width:768px) {
+    flex-direction: column;
+  }
+
+  .info-text {
+    width: 75%;
+    @media(max-width:768px) {
+      width: 90%;
+    }
+  
+
+    .info-text__title {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .info-text__content {
+      font-size: 12px;
+    }
+  }
+
+  .info-box__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: $red;
+    color: $white;
+    padding: 10px 30px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.3s ease-in-out;
+    }
+    @media(max-width:768px) {
+      margin-top: 20px;
+    }
+  
+  }
+}
