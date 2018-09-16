@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>website</title>
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
   <nav class="nav">
     <div class="logo">
       <img src="img/logo.png" alt="" class="logo__img">
@@ -19,11 +20,12 @@
         <p class="contact__text">Bezpłatna konsultacja <span class="contact__text--number">+48 601 73 88 91</span></p>
       </div>
       <ul class="list">
-        <li class="list__item--active">Strona główna</li>
-        <li class="list__item">O nas</li>
-        <li class="list__item">Czym się zajmujemy</li>
-        <li class="list__item">Zgłoś szkodę</li>
-        <li class="list__item">Kontakt</li>
+        <li class="list__item--active"><a href="#header" class="list__link--active">Strona główna</a></li>
+        <li class="list__item"><a href="#about" class="list__link">O nas</a></li>
+        <li class="list__item"><a href="#services" class="list__link">Czym się zajmujemy</a></li>
+        <li class="list__item"><a href="#work" class="list__link">Oferta</a></li>
+        <li class="list__item"><a href="#contact-us" class="list__link">Zgłoś szkodę</a></li>
+        <li class="list__item"><a href="#contact-us" class="list__link">Kontakt</a></li>
       </ul>
     </div>
     <div class="hamburger">
@@ -39,63 +41,64 @@
   </div>
 </header>
 
-<section class="about">
+<section class="about" id="about">
   <div class="shape"></div>
+  <div class="white-line" data-aos="fade-left" data-aos-delay="500" data-aos-duration="600"></div>
   <div class="text">
-    <p class="about__title">Polski Serwis Odszkodowań</p>
-    <p class="about__title about__title--bottom">świadczy usługi prawne w całej Polsce</p>
-    <p class="about__text">Zespół tworzą doświadczeni prawnicy specjalizujący się w dochodzeniu roszczeń 
-      odszkodowawczych, ze szczególnym uwzględnieniem likwidacji szkód osobowych i komunikacyjnych, rolniczych, z zakresu wypadków przy pracy oraz innych wypadków, w których doszło do szkody. </p>   
-    <p class="about__text">Zapewniamy także obsługę prawną z zakresu prawa karnego świadczoną przez 
+    <p class="about__title" data-aos="fade-up" data-aos-duration="600">Polski Serwis Odszkodowań</p>
+    <p class="about__title about__title--bottom" data-aos="fade-up" data-aos-duration="600">świadczy usługi prawne w całej Polsce</p>
+    <div class="description" data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
+      <p class="about__text">Zespół tworzą doświadczeni prawnicy specjalizujący się w dochodzeniu roszczeń 
+      odszkodowawczych, ze szczególnym uwzględnieniem likwidacji szkód osobowych i komunikacyjnych, rolniczych,z zakresu wypadków przy pracy oraz innych wypadków, w których doszło do szkody. </p>   
+      <p class="about__text">Zapewniamy także obsługę prawną z zakresu prawa karnego świadczoną przez 
       doświadczony zespół prawników. W celu świadczenia naszych usług na najwyższym poziomie współpracujemy ze specjalistami na terenie całej Polski.</p>    
-    <p class="about__text">Do każdej sprawy podchodzimy indywidualnie, przydzielając co najmniej 2           prawników. Nasi klienci pozostają w stałym kontakcie z pełnomocnikami zajmującymi się ich sprawami.</p>    
-    <p class="about__text">Jeżeli chcesz skorzystać z naszych usług w zakresie dochodzenia roszczeń 
-      odszkodowawczych, prosimy o kontakt. Nasz przedstawiciel szczegółowo wytłumaczy zasady współpracy i pomoże w zebraniu niezbędnej dokumentacji potrzebnej do 
-      uzyskania świadczenia. My na tej podstawie przygotujemy zgłoszenie roszczenia do ubezpieczyciela, a ustalona wysokość świadczeń trafi na Twoje konto. </p>
+      <p class="about__text">Do każdej sprawy podchodzimy indywidualnie, przydzielając co najmniej 2 prawników.  Nasi klienci pozostają w stałym kontakcie z pełnomocnikami zajmującymi się ich sprawami.</p>    
+      <p class="about__text">Jeżeli chcesz skorzystać z naszych usług w zakresie dochodzenia roszczeń  odszkodowawczych, prosimy o kontakt. Nasz przedstawiciel szczegółowo wytłumaczy zasady współpracy i pomoże w zebraniu niezbędnej dokumentacji potrzebnej do uzyskania świadczenia. My na tej podstawie przygotujemy zgłoszenie roszczenia do ubezpieczyciela, a ustalona wysokość świadczeń trafi na Twoje konto. </p>
+    </div>
   </div>  
   <img src="img/foto.png" alt="" class="about__img">
   <img src="img/arrow.png" alt="" class="about__arrow">
 </section>
 
 
-<section class="services">
+<section class="services" id="services">
   <p class="services__title">Nasza oferta</p>
   <p class="services__text">Sprawdź w czym jesteśmy pomocni</p>
 
   <div class="cards">
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="800">
       <img src="img/car.png" alt="" class="card__img">
       <p class="card__title">Dojeżdżamy do klienta</p>
       <p class="card__text">Nasi przedstawiciele są do Twojej dyspozycji 7 dni w tygodniu. Dojazd do klienta jest darmowy na terenie całej Polski. Wystarczy telefon, a umówimy spotkanie w dogodnym terminie.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
       <img src="img/form.png" alt="" class="card__img" >
       <p class="card__title">Prosta umowa</p>
       <p class="card__text">Na spotkaniu podpiszemy prostą i czytelną umowę, na warunkach korzystnych dla klienta.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
       <img src="img/calc.png" alt="" class="card__img">
       <p class="card__title">JAsne rozliczenie</p>
       <p class="card__text">Wynagrodzenie uzależnione od uzyskania świadczeń na rzecz klienta. Nie pobieramy zaliczek, ani przedpłat. System rozliczenia ustalany jest indywidualnie.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="800" >
       <img src="img/work.png" alt="" class="card__img">
       <p class="card__title">Praca popłaca</p>
       <p class="card__text">Nasza praca nastawiona jest na uzyskanie najwyższego świadczenia dla klienta. Pracujemy ciężko, bo wiemy, że czym więcej uzyskamy dla Ciebie, tym większe będzie nasze wynagrodzenie. 
       To jasny układ.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
       <img src="img/court.png" alt="" class="card__img">
       <p class="card__title">Prowadzimy sprawy sądowe</p>
       <p class="card__text">Uzyskanie wysokiego odszkodowania może wiązać się z koniecznością wystąpienia na drogę sądową. Bez obaw - jesteśmy na to przygotowani. Nasz zespół adwokatów i radców prawnych poprowadzi Twoją sprawę w sądzie, a Polski Serwis Odszkodowań zapłaci ich 
       honorarium.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
       <img src="img/law.png" alt="" class="card__img">
       <p class="card__title">Z nami możesz więcej</p>
       <p class="card__text">Gwarantujemy Ci bezpłatną poradę prawną, profesjonalną i kompleksową obsługę Twojej sprawy przez najlepszych prawników, uczciwe warunki współpracy, wysoką skuteczność działania.</p>
@@ -104,7 +107,7 @@
 </section>
 
 
-<section class="work">
+<section class="work" id="work">
   <p class="work__title">Jakimi sprawami się zajmujemy</p>
   <div class="pictures">
     <div class="shrink" data-text="uszkodzenia pojazdów, obrażenia kierowców i pasażerów, potrącenia pieszych, zgony">
@@ -143,13 +146,13 @@
   </div>
 </section>
 
-<section class="contact-us">
+<section class="contact-us" id="contact-us">
   <div class="left">
     <div class="content">
-      <p class="content__top">Miałeś wypadek?</p>
-      <p class="content__bottom">Zgłoś się do nas!</p>
+      <p class="content__top" data-aos="fade-right" data-aos-duration="800">Miałeś wypadek?</p>
+      <p class="content__bottom" data-aos="fade-right" data-aos-duration="800">Zgłoś się do nas!</p>
     </div>
-    <div class="contact-info">
+    <div class="contact-info" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
       <img src="img/call.png" alt="" class="contact-info__img">
       <div class="info">
         <p class="info__text">Bezpłatna konsultacja</p>
@@ -157,14 +160,14 @@
       </div>
     </div>
     <div class="contact-us__img">
-      <img src="img/hand.png" alt="" class="left__img">
+      <img src="img/hand.png" alt="" class="left__img"  data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" data-aos-easing="ease-in-sine">
       <!-- <div class="line"></div> -->
     </div>  
   </div>
   <div class="right">
     <div class="content">
-      <p class="content__top">Zostaw wiadomość</p>
-      <p class="content__bottom">Zadzwonimy do Ciebie</p>
+      <p class="content__top" data-aos="fade-left" data-aos-duration="800">Zostaw wiadomość</p>
+      <p class="content__bottom" data-aos="fade-left" data-aos-duration="800">Zadzwonimy do Ciebie</p>
     </div>
     <div class="form">
       <input type="text" class="input" placeholder="Imię i nazwisko">
@@ -195,6 +198,10 @@
   <a data-target="#" class="info-box__btn">Akceptuję</a>
 </div>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="js/main.js"></script>
 </body>
 </html>
