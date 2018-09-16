@@ -1,0 +1,217 @@
+.contact-us {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 150px auto 0 auto;
+  position: relative;
+  width:80%;
+  @media(max-width:1300px) {
+    width: 93%;
+  }
+  @media(max-width: 1120px) {
+    width: 97%;
+  }
+  @media(max-width:1040px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top:80px;
+  }
+
+
+    .content {
+      width: 85%;
+      margin: 0 auto;
+      @media(max-width:485px) {
+        width:97%;
+      }
+
+      .content__top {
+        color: $black;
+        font-size: 45px;
+        font-weight: 300;
+        @media(max-width:606px) {
+          font-size: 33px;
+        }
+        @media(max-width:375px) {
+          font-size: 25px;
+        }
+      }
+  
+      .content__bottom {
+        color: $red;
+        font-size: 48px;
+        font-weight: 700;
+        @media(max-width:606px) {
+          font-size: 33px;
+        }
+        @media(max-width:375px) {
+          font-size: 25px;
+        }
+      }
+    }
+
+    .left {
+      width:50%;
+      text-align: left;
+      @media(max-width:1040px) {
+        order:2;
+        margin-top: 80px;
+        width:80%;
+      }
+
+      .contact-info {
+       display: flex;
+       margin: 150px 0 0 80px;
+       width: 90%;
+       @media(max-width: 1120px) {
+         margin-left:40px;
+       }
+       @media(max-width:1040px) {
+        margin-top:80px;
+        width:100%;
+      }
+      @media(max-width:606px) {
+        margin-top: 50px;
+      }
+      @media(max-width:485px) {
+        margin-left:5px;
+      }
+
+        .contact-info__img {
+          height: 100px;
+          width: 100px;
+          margin-right: 30px;
+          @media(max-width:606px) {
+            height: 80px;
+            width: 80px;
+            margin-right: 15px;
+          }
+          @media(max-width:485px) {
+            height: 50px;
+            width:50px;
+          }
+        }
+
+        .info {
+          
+          .info__text {
+            color: $red;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 20px;
+            @media(max-width:485px) {
+              margin-bottom: 5px;
+            }
+          }
+
+          .info__number {
+            font-size: 40px;
+            @media(max-width: 606px) {
+              font-size: 25px;
+            }
+            @media(max-width:485px) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .contact-us__img {
+        height: 400px;
+        width: 500px;
+        position: relative;
+        overflow: hidden;
+        margin-top: -40px;
+        @media(max-width:606px) {
+          height: 300px;
+          width:400px;
+        }
+        @media(max-width:485px) {
+          display: none;
+        }
+
+        .left__img {
+          height: 100%;
+          width:100%;
+          position: absolute;
+          left: 0%;
+          bottom: -14%;
+        }
+      }
+    }
+
+    .right {
+      width:50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media(max-width:1040px) {
+        order:1;
+        width:80%;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        margin: 80px auto 0;
+        width:85%;
+        @media(max-width:606px) {
+          margin-top: 50px;
+        }
+        @media(max-width:485px) {
+          width:100%;
+        }
+
+        .input {
+          margin-bottom: 20px;
+          padding: 10px;
+          border: $red solid 1px;
+          border-radius: 8px;
+          outline: none;
+          &::placeholder {
+            color: $red;
+          }
+        }
+
+        .msg {
+          border: $red solid 1px;
+          border-radius: 8px;
+          outline: none;
+          padding: 10px;
+          &::placeholder {
+            color: $red;
+            font-family: 'Open Sans'
+          }
+        }
+      }
+
+
+      .consent {
+        color: #9c9c9c;
+        font-size: 10px;
+        font-weight: 400;
+        width:80%;
+        text-align: left;
+        margin: 30px auto;
+        @media(max-width:485px) {
+          width:100%;
+        }
+      }
+
+      .btn {
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: $red;
+        color: $white;
+        font-weight: 600;
+        font-size:13px;
+        width: 130px;
+        padding: 10px;
+        border-radius: 9px;
+      }
+    }
+  
+}
