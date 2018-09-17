@@ -47,9 +47,6 @@ gulp.task('css', function(){
 
 
 
-
-
-
 //minify js files and move to dist
 gulp.task('uglify', function(){
   return gulp.src('src/js/**/*.js')
